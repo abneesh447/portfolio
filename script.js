@@ -92,6 +92,30 @@ const spy = new IntersectionObserver((entries) => entries.forEach((e) => {
 }), { rootMargin: "-45% 0px -50% 0px" });
 document.querySelectorAll("main section[id]").forEach((s) => spy.observe(s));
 
+// resume — force file download instead of in-browser preview
+document.getElementById("resume")?.addEventListener("click", async (e) => {
+  e.preventDefault();
+  const link = e.currentTarget;
+  const name = link.getAttribute("download") || "Abneesh_Resume.pdf";
+  try {
+    const res = await fetch(link.href);
+    if (!res.ok) throw new Error("fetch failed");
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    a.rel = "noopener";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  } catch {
+    link.removeAttribute("download");
+    link.click();
+  }
+});
+
 // copy email
 const copyBtn = document.getElementById("copy"), copyText = document.getElementById("copyText");
 copyBtn.addEventListener("click", async () => {
