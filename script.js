@@ -5,6 +5,7 @@ const LINKS = {
   codeforces: "https://codeforces.com/profile/astri_",
   agentPy: "https://github.com/abneesh447/agent-py",
   orgmind: "https://github.com/abneesh447/orgmind",
+  orgmindLive: "https://orgmind-ruddy.vercel.app/",
   ragrabbit: "https://github.com/abneesh447/RagRabbit",
   ragrabbitLive: "https://ragrabbit-ashen.vercel.app/",
   snaplink: "https://github.com/abneesh447/Snaplink",
