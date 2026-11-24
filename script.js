@@ -1,8 +1,8 @@
 const LINKS = {
   github: "https://github.com/abneesh447",
-  linkedin: "https://www.linkedin.com/in/",
-  leetcode: "https://leetcode.com/u/",
-  codeforces: "https://codeforces.com/profile/",
+  linkedin: "https://www.linkedin.com/in/abneeshpatel9",
+  leetcode: "https://leetcode.com/u/astri_/",
+  codeforces: "https://codeforces.com/profile/astri_",
   agentPy: "https://github.com/abneesh447/agent-py",
   orgmind: "https://github.com/abneesh447/orgmind",
   ragrabbit: "https://github.com/abneesh447/RagRabbit",
