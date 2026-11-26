@@ -191,6 +191,7 @@ code{font-family:var(--mono);font-size:.84em;background:var(--chip);padding:.12e
 .proj-links{display:flex;gap:8px;align-items:center}
 .pill-link{font:600 11px/1 var(--sans);padding:7px 11px;border-radius:999px;border:1px solid var(--line);transition:all .25s}
 .pill-link:hover{background:var(--ink);color:var(--bg)}
+.pill-note{font:500 11px/1 var(--sans);padding:7px 11px;border-radius:999px;border:1px solid var(--line);color:var(--muted);cursor:default}
 .proj-body h3{font-family:var(--display);font-weight:600;font-size:24px;letter-spacing:-.03em}
 .ext{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);transition:all .25s}
 .ext:hover{background:var(--ink);color:var(--bg);transform:rotate(45deg)}
